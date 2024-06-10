@@ -1,0 +1,58 @@
+root{
+    var(--bg-color, #F0F7EE0);
+    var(--pink-color, #A07178);
+    var(--columbia-blue, #C4D7F2);
+    var(--non-photo-blue, #AFDEDC);
+    var(--dark-blue, #345995);
+}
+
+/* Color scheme: non-photo-blue #AFDEDC,
+ columbia-blue #C4D7F2 mint cream #F0F7EE
+  ylnmn blue #345995, mountbatten pink #A07178
+  picked with coolors.co*/
+
+  body {
+    background-color: var(--bg-color);
+    font-family: sans-serif;
+    padding: 25px;
+    border: var(--non-photo-blue);
+
+
+  }
+
+  header{
+    background-color: #A07178;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+    color: #F0F7EE;
+  }
+
+  header h1{
+    font-size: 38px;
+
+  }
+  header nav{
+    float: right;
+  }
+  header nav ul{
+    font-size: 30px;
+    font-weight: bolder;
+    flex-direction: row;
+    display: block;
+    list-style-type:none;
+  }
+
+  header nav ul li {
+    display: inline-block;
+    
+    }
+
+  main {
+    background-color: #C4D7F2;
+    color: var(--non-photo-blue);
+    display: flex;
+    flex-direction: column;
+
+  }
