@@ -12,9 +12,10 @@ root{
   picked with coolors.co*/
 
   body {
-    background-color: #F0F7EE;
+    background-color: var(--bg-color);
     font-family: sans-serif;
     padding: 25px;
+    border: var(--non-photo-blue);
 
 
   }
