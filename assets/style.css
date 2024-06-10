@@ -55,31 +55,30 @@
     color: var(--dark-blue);
     background-color: var(--bg-color);
     display: block;
-    align-items: center;
+    
   }
 
-  #content{
-display: block;
-width: 90%;
-
-  }
   #About{
     background-color: var(--columbia-blue);
     display: block;
     width: auto;
   }
+
   #profileimg{
     width: 250px;
+    display: inline-block;
   }
 
+
   #Work {
-    display: flex;
+    display: grid;
     background-color: var(--columbia-blue);
+    justify-content: initial;
 
   }
   #showcaseproject{
-    display: inline-block;
     background-color: var(--columbia-blue);
+    float: left;
     width: 80%;
     margin: 10px;
     border: 5px; 
@@ -88,7 +87,7 @@ width: 90%;
 
   #additionalprojects {
     display: inline-flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 0;
     width: 40%;
   }
@@ -99,11 +98,9 @@ width: 90%;
   #Contact {
     display: block;
     background-color: var(--columbia-blue);
+    align-items: center;
 
   }
-
-
- 
   
   footer{
     display: flex;
