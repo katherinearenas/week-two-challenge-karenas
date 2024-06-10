@@ -1,9 +1,9 @@
-root{
-    var(--bg-color, #F0F7EE0);
-    var(--pink-color, #A07178);
-    var(--columbia-blue, #C4D7F2);
-    var(--non-photo-blue, #AFDEDC);
-    var(--dark-blue, #345995);
+:root {
+    --bg-color: #F0F7EE0;
+    --pink-color: #A07178;
+    --columbia-blue: #C4D7F2;
+    --non-photo-blue: #AFDEDC;
+    --dark-blue: #345995;
 }
 
 /* Color scheme: non-photo-blue #AFDEDC,
@@ -12,16 +12,14 @@ root{
   picked with coolors.co*/
 
   body {
-    background-color: var(--bg-color);
+    background-color:var(--bg-color);
     font-family: sans-serif;
     padding: 25px;
     border: var(--non-photo-blue);
-
-
   }
 
-  header{
-    background-color: #A07178;
+  header {
+    background-color:var(--pink-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,29 +28,85 @@ root{
   }
 
   header h1{
-    font-size: 38px;
+    font-size: 40px;
 
   }
   header nav{
     float: right;
+    color: var(--bg-color);
+
   }
   header nav ul{
+    display: block;
     font-size: 30px;
     font-weight: bolder;
     flex-direction: row;
-    display: block;
-    list-style-type:none;
+    color: var(--bg-color)
+    
   }
 
   header nav ul li {
     display: inline-block;
-    
+    list-style-type: none;
     }
 
   main {
-    background-color: #C4D7F2;
-    color: var(--non-photo-blue);
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    color: var(--dark-blue);
+    background-color: var(--bg-color);
+    display: block;
+    align-items: center;
+  }
 
+  #content{
+display: block;
+width: 90%;
+
+  }
+  #About{
+    background-color: var(--columbia-blue);
+    display: block;
+    width: auto;
+  }
+  #profileimg{
+    width: 250px;
+  }
+
+  #Work {
+    display: flex;
+    background-color: var(--columbia-blue);
+
+  }
+  #showcaseproject{
+    display: inline-block;
+    background-color: var(--columbia-blue);
+    width: 80%;
+    margin: 10px;
+    border: 5px; 
+    padding: 10px;
+  }
+
+  #additionalprojects {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 0;
+    width: 40%;
+  }
+  #placeholderimg{
+    width: 200px;
+  }
+
+  #Contact {
+    display: block;
+    background-color: var(--columbia-blue);
+
+  }
+
+
+ 
+  
+  footer{
+    display: flex;
+    background-color: var(--pink-color);
+    justify-content: center;
   }
