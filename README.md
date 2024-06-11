@@ -20,9 +20,9 @@ The portfolio page is includes responsive css, using media queries and flex prop
 On phones the header is displayed in a column, on desktop the header is displayed as a row.
 
 
-![screenshotone](deployed1.png)
-![screenshottwo](deployed2.png)
-![screenshotthree](deployed3.png)
+![screenshotone](assets/deployed1.png)
+![screenshottwo](assets/deployed2.png)
+![screenshotthree](assets/deployed3.png)
 
 
 
