@@ -7,53 +7,61 @@
     <title>Katherine Arenas</title>
 </head>
 <body>
-    <header>
+   
+    <header> 
+        <!-- This includes the header and the nav bar -->
         <h1><strong>Katherine's Portfolio</strong></h1>
         <nav> 
-            <h1><ul>
+            <ul>
                 <li>
-                    <a href="#About">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#Work">Work</a>
+                    <a href="#work">Work</a>
                 </li>
                 <li>
-                    <a href="#Contact">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
-            </ul></h1>
+            </ul>
         </nav>
     </header>
     <main>
-        <section id="About" class="content">
-            <figure><img id="profileimg" src="assets/katherineprofile.jpeg" alt="Image of Katherine in an orange beanie" width="10%"></figure>
+        <!-- This includes the about work and contact sections -->
+        <section id="about" class="container">
+            <!-- about section -->
             <h2>About</h2>
+            <img id="profileimg" src="assets/katherineprofile.jpeg" alt="Image of Katherine in an orange beanie." width="250px" >
             <p>Katherine is a mixed-media artist and web developer.<br>
              She enjoys writing and hand-drawing comics, <br>
              creating charcoal portraits, and ceramics.<br>
              She is a lifelong student and academic.</p>
         </section>
-        <section id="Work" class="containergrid">
+        
+        <section id="work">
+            <!-- work section  -->
             <h2>Work</h2>
-            <div id="showcaseproject">
-                <h3>Horiseon(HTML and CSS)</h3>
-                <figure><a href="https://katherinearenas.github.io/week-one-challenge-karenas/"><img src="assets/horiseondemo.png" alt="Horiseon Portfolio Project" width="600px" ></a></figure>
-            </div>
-            <div class="additionalpojects">
-                <figure><img id="placeholderimg" src="assets/futureprojectcomingsoon.png" alt="Future Project Coming Soon"></figure>
-           
-            </div>
-            <div class="additionalpojects">
-                <figure><img id="placeholderimg" src="assets/futureprojectcomingsoon.png" alt="Future Project Coming Soon"></figure>
+            <div class="container">
+                <div class="card">
+                    <figure><img id="placeholderimg" src="assets/futureprojectcomingsoon.png" alt="Future Project Coming Soon"></figure>
+                    <h3>Future Project</h3>
+                </div>
+                <div class="card">
+                    <figure><img id="placeholderimg" src="assets/futureprojectcomingsoon.png" alt="Future Project Coming Soon"></figure>
+                    <h3>Future Project</h3>
+                </div>
+                <div class="card">
+                    <figure><img id="placeholderimg" src="assets/futureprojectcomingsoon.png" alt="Future Project Coming Soon"></figure>
+                    <h3>Future Project</h3>
             </div>
         </section>
-        <section id="Contact" class="content">
+        <section id="contact" > 
+            <!-- contact section  -->
             <h2>Contact</h2>
-            <a href="mailto:karenas2@illinois.edu">Send Katherine an Email.</a>  
+                <a href="mailto:karenas2@illinois.edu">Send Katherine an Email.</a>  
         </section>    
     </main>
     <footer>
-            <p> ⓒ copyright 2024 Katherine Arenas<br>
-            All rights reserved.</p>
+            <p> ⓒ Copyright 2024 | Katherine Arenas | All rights reserved.</p>
     </footer>
 </body>
 </html>

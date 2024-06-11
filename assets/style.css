@@ -15,7 +15,7 @@
     background-color:var(--bg-color);
     font-family: sans-serif;
     padding: 25px;
-    border: var(--non-photo-blue);
+    border: var(--dark-blue);
   }
 
   header {
@@ -28,7 +28,8 @@
   }
 
   header h1{
-    font-size: 40px;
+    font-size: 30px;
+    margin-left: 25px;
 
   }
   header nav{
@@ -37,8 +38,9 @@
 
   }
   header nav ul{
-    display: block;
-    font-size: 30px;
+    padding-top: 10px;
+    margin-right: 15px;
+    font-size: 20px;
     font-weight: bolder;
     flex-direction: row;
     color: var(--bg-color)
@@ -46,9 +48,18 @@
   }
 
   header nav ul li {
-    display: inline-block;
     list-style-type: none;
+    display: inline-block;
     }
+
+  a{
+    color:  var(--bg-color);
+    text-decoration: none;
+  }
+
+  p{
+    font-size: 18px;
+  }
 
   main {
     width: 100%;
@@ -58,52 +69,131 @@
     
   }
 
-  #About{
+  #about{
     background-color: var(--columbia-blue);
     display: block;
+    margin-bottom: 20px;
+    padding: 50px;
     width: auto;
+    text-align: center;
   }
+
+  /* #about h2{
+    display: block;
+    padding-right: 30px;
+  } */
 
   #profileimg{
     width: 250px;
     display: inline-block;
   }
 
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    display: inline;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
 
-  #Work {
-    display: grid;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #work {
+    display: flex;
     background-color: var(--columbia-blue);
     justify-content: initial;
+    margin-bottom: 20px;
+    padding: 50px;
+    align-items: center;
+    
 
   }
-  #showcaseproject{
+
+  .card{
     background-color: var(--columbia-blue);
     float: left;
     width: 80%;
     margin: 10px;
     border: 5px; 
     padding: 10px;
-  }
+  } 
 
-  #additionalprojects {
+   /* #additionalprojects {
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 0;
-    width: 40%;
-  }
+    justify-items: space-between;
+    width: 40%
+  }  */
+
+  
+
+  
   #placeholderimg{
     width: 200px;
   }
 
-  #Contact {
+  #contact {
     display: block;
     background-color: var(--columbia-blue);
-    align-items: center;
+    margin-bottom: 20px;
+    padding: 50px;
+    text-align: center;
+  }
+  #contact a{
+    text-decoration: none;
+    color: var(--bg-color);
+  }
 
+  footer{
+    display: block;
+    background-color: var(--pink-color);
+    text-align: center;
+    color: #F0F7EE;
+    padding: 20px;
+  } 
+
+ /* Smartphones (portrait and landscape) ----------- */
+
+ @media screen and (max-width: 992px) {
+
+  #work{
+    display: flexbox;
+    flex-direction: column;
+  }
+  }
+  .card {
+    width: 50%;
+  }
+
+
+@media screen and (max-width: 768px) {
+ #work{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: ;
+
+ }
+  
+  .card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px ) {
+
+  header {
+    flex-direction: column;
   }
   
-  footer{
-    display: flex;
-    background-color: var(--pink-color);
-    justify-content: center;
-  }
+}
+
